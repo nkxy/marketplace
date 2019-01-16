@@ -35,3 +35,5 @@ Product.create!([
     inventory_count: 0
   },
 ])
+
+p "Created #{Product.count} products"
