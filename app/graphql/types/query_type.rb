@@ -12,9 +12,9 @@ Types::QueryType = GraphQL::ObjectType.define do
         else 
           Product.all
         end
-       }
       rescue 
         raise GraphQL::ExecutionError.new("Unable to fetch products.")
       end
+    }
   end
 end
