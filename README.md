@@ -24,18 +24,54 @@ rails db:create
 
 Run `rake db:seed`
 
-- Running the database
+- Starting the server
 
-1. Inside of the root directory, run `rails server`
-2. Navigate to http://localhost:3000/graphiql.
+Inside of the root directory, run `rails server`
 
 - Interacting with the GraphQL API
 
+Navigate to http://localhost:3000/graphiql, after starting the server.
+
 ### Query for all products
+
+```
+{
+  allProducts {
+    id
+    inventory_count
+    price
+    title
+	}
+}
+```
 
 ### Query for available products
 
+```
+{
+  allProducts(onlyAvailableProducts: true) {
+    id
+    inventory_count
+    price
+    title
+	}
+}
+```
+
 ### Purchase a product
+
+Can only purchase products with an inventory_count > 0.
+
+```
+mutation {
+  purchaseProduct(title: "INSERT_PRODUCT_NAME") {
+    id
+    title
+    price
+    inventory_count
+  }
+}
+```
 
 - Acknowledgements
 
