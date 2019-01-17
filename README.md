@@ -1,24 +1,42 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+- Versions
 
-Things you may want to cover:
+Rails 5.2.2
 
-* Ruby version
+Ruby 2.5.1
 
-* System dependencies
+- Configuration
 
-* Configuration
+Install [Ruby on Rails](https://gorails.com/setup/)
 
-* Database creation
+Inside the root directory, run
 
-* Database initialization
+```
+gem install bundler
+gem install rails -v 5.1.4
+bundle install
+bundle update
+rails db:create
+```
 
-* How to run the test suite
+- Database creation
 
-* Services (job queues, cache servers, search engines, etc.)
+Run `rake db:seed`
 
-* Deployment instructions
+- Running the database
 
-* ...
+1. Inside of the root directory, run `rails server`
+2. Navigate to http://localhost:3000/graphiql.
+
+- Interacting with the GraphQL API
+
+### Query for all products
+
+### Query for available products
+
+### Purchase a product
+
+- Acknowledgements
+
+Followed [this tutorial](https://www.howtographql.com/graphql-ruby/0-introduction/) to set up project.
