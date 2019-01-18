@@ -1,12 +1,14 @@
 # README
 
-- Versions
+## Process
 
-Rails 5.2.2
+This was my first time actually using GraphQL & Ruby on Rails, and I was curious as to how they differed compared to traditional REST APIs that I've worked with. I found that I could easily query for just the title, or the inventory_count without getting other information, for both mutations and regular queries. This would allow for more efficient queries; for example, if a shopping cart was implemented, to get the total price I could just query for the prices and sum those.
 
-Ruby 2.5.1
+However, I felt like there was so much happening under the hood, that at times I felt like it was almost magic how everything was coming together. I struggled with figuring out how exactly the query types information was being added. I would be really interested in reading more about how exactly GraphQL works under the hood, as well as more about the Rails ecosystem.
 
-- Configuration
+SQLite was used as a database because it required minimal configuration. However, this may need to change if this was every scaled up to an actual marketplace, as it does not perform well when multiple requests are made at the same time, which would happen with multiple users on the marketplace.
+
+## Configuration
 
 Install [Ruby on Rails](https://gorails.com/setup/)
 
@@ -20,15 +22,15 @@ bundle update
 rails db:create
 ```
 
-- Database creation
+## Database creation
 
 Run `rake db:seed`
 
-- Starting the server
+## Starting the server
 
 Inside of the root directory, run `rails server`
 
-- Interacting with the GraphQL API
+## Interacting with the GraphQL API
 
 Navigate to http://localhost:3000/graphiql, after starting the server.
 
