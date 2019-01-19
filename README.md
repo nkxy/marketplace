@@ -2,7 +2,7 @@
 
 ## Process
 
-This was my first time actually using GraphQL & Ruby on Rails, and I was curious as to how they differed compared to traditional REST APIs that I've worked with. I found that I could easily query for just the title, or the inventory_count without getting other information, for both mutations and regular queries. This would allow for more efficient queries; for example, if a shopping cart was implemented, to get the total price I could just query for the prices and sum those.
+This was my first time using GraphQL & Ruby on Rails - I wanted to try and learn something new, and push myself out of my comfort zone. I was curious as to how they differed compared to traditional REST APIs that I've worked with. I found that I could easily query for just the title, or the inventory_count without getting other information, for both mutations and regular queries. This would allow for more efficient queries; for example, if a shopping cart was implemented, to get the total price I could just query for the prices and sum those.
 
 However, I felt like there was so much happening under the hood, that at times I felt like it was almost magic how everything was coming together. I struggled with figuring out how exactly the query types information was being added. I would be really interested in reading more about how exactly GraphQL works under the hood, as well as more about the Rails ecosystem.
 
