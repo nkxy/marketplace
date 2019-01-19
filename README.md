@@ -20,6 +20,7 @@ gem install rails -v 5.1.4
 bundle install
 bundle update
 rails db:create
+rails db:migrate
 ```
 
 ## Database creation
